@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Sorter{
 
     public static void main(String[] args) {
-        int[] data = { 21, 14, 6, 3, 17 };
+        int[] data = { 28, 15, 6, 3, 17 };
         Sorter ss = new Sorter();
         ss.selectionSort(data);
         System.out.println("Sorted Array in Ascending Order: ");
