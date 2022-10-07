@@ -3,12 +3,26 @@ import java.util.Arrays;
 public class Sorter{
 
     public static void main(String[] args) {
-        int[] data = { 28, 15, 6, 3, 17 };
-        Sorter ss = new Sorter();
-        ss.selectionSort(data);
-        System.out.println("Sorted Array in Ascending Order: ");
-        System.out.println(Arrays.toString(data));
+      Sorter test = new Sorter();
+      test.sort1(args);
+      test.sort2(args);
         }
+        public void sort1(String[] args) {
+          int[] data = { 28, 15, 6, 3, 17 };
+          Sorter ss = new Sorter();
+          ss.selectionSort(data);
+          System.out.println("Sorted Array By Selection : ");
+          System.out.println(Arrays.toString(data));
+          }
+
+        public void sort2(String args[]) {
+          int[] data = { 9, 5, 1, 4, 3 };
+          Sorter is = new Sorter();
+          is.insertionSort(data);
+          System.out.println("Sorted Array by insertion: ");
+          System.out.println(Arrays.toString(data));
+        }
+        
         void selectionSort(int array[]) {
             int size = array.length;
         
@@ -51,13 +65,4 @@ public class Sorter{
               array[j + 1] = key;
             }
           }
-          public static void sort2(String args[]) {
-            int[] data = { 9, 5, 1, 4, 3 };
-            Sorter is = new Sorter();
-            is.insertionSort(data);
-            System.out.println("Sorted Array in Ascending Order: ");
-            System.out.println(Arrays.toString(data));
-          }
-
-
         }
